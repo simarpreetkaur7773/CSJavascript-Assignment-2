@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Smoothie Machine">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smoothie Machine</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>The Smoothie Zone</h1>
+  </header>
+
+  <main>
+    <h2>Student Info</h2>
+    <form id="studentInfo">
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" name="studentId" required>
+    </form>
+
+    <h2>Smoothie Order</h2>
+    <form id="smoothieForm">
+
+      <label for="base">Base:</label>
+      <select id="base" name="base" required>
+        <option value="yogurt">Yogurt</option>
+        <option value="milk">Milk</option>
+        <option value="coconut-water">Coconut Water</option>
+        <option value="fruit-juice">Fruit Juice</option>
+      </select>
+
+      <label>Fruits:</label>
+      <div id="fruit-section">
+        <div class="fruit-item">
+          <input type="checkbox" id="banana" name="fruits" value="Banana">
+          <label for="banana">Banana</label>
+        </div>
+        <div class="fruit-item">
+          <input type="checkbox" id="mango" name="fruits" value="Mango">
+          <label for="mango">Mango</label>
+        </div>
+        <div class="fruit-item">
+          <input type="checkbox" id="berries" name="fruits" value="Berries">
+          <label for="berries">Berries</label>
+        </div>
+        <div class="fruit-item">
+          <input type="checkbox" id="pineapple" name="fruits" value="Pineapple">
+          <label for="pineapple">Pineapple</label>
+        </div>
+        <div class="fruit-item">
+          <input type="checkbox" id="spinach" name="fruits" value="Spinach">
+          <label for="spinach">Spinach</option>
+        </div>
+      </div>
+
+      <label>Add-Ins:</label>
+      <div id="addin-section">
+        <div class="addin-item">
+          <input type="checkbox" id="protein-powder" name="addins" value="Protein Powder">
+          <label for="protein-powder">Protein Powder</label>
+        </div>
+        <div class="addin-item">
+          <input type="checkbox" id="honey" name="addins" value="Honey">
+          <label for="honey">Honey</label>
+        </div>
+        <div class="addin-item">
+          <input type="checkbox" id="nuts" name="addins" value="Nuts">
+          <label for="nuts">Nuts</label>
+        </div>
+      </div>
+
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions" name="instructions"></textarea>
+
+      <input type="button" id="blendIt" value="Blend It!">
+    </form>
+
+    <div id="smoothieOrder"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Smoothie Zone</p>
+  </footer>
+
+</body>
+
+</html>
